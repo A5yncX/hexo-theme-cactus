@@ -5,7 +5,8 @@
 # Link to a page that gives an overview of all your projects.
 # This can be an external link (e.g., to you GitHub profile) or to another
 # page within your website.
-projects_url: http://github.com/probberechts
+
+#### projects_url: http://github.com/probberechts
 
 # Set the page direction to RTL or LTR. default is LTR. (if you set it 'rtl', the 'vazir' font will be loaded.)
 direction: ltr
@@ -15,9 +16,11 @@ direction: ltr
 # languages/*.yml
 nav:
   home: /
-  about: /about/
+  tag: /tags/
   articles: /archives/
-  projects: http://github.com/probberechts
+  about: /about/
+  search: /search/
+  # projects: http://github.com/probberechts
 
 
 # Links to your social media accounts.
@@ -25,11 +28,12 @@ nav:
 # (see https://fontawesome.com/icons?d=gallery&s=brands);
 # only 'mail' is an exception.
 social_links:
-  github: http://github.com/probberechts/cactus-dark
-  twitter: /
-  facebook: /
-  linkedin: /
-  mail: mailto:name@email.com
+  github: https://github.com/A5yncX
+  # twitter: /
+  # facebook: /
+  # linkedin: /
+  mail: asyncx@asyncx.top
+  steam: https://steamcommunity.com/id/1158271328/
 
 # Customize the overview with displaying a tagcloud on the index page.
 # Options: https://hexo.io/docs/helpers.html#tagcloud
@@ -42,7 +46,7 @@ tags_overview: false
 #   - sort_updated: sort posts by last modification date instead of creation date.
 posts_overview:
   show_all_posts: false
-  post_count: 5
+  post_count: 6
   sort_updated: false
 
 # Customize the archive view.
@@ -62,7 +66,7 @@ post:
 # Customize the copyright years
 # Note: if start_year/end_year not provided, will use current year.
 copyright:
-  start_year: 2016
+  start_year: 2019
   end_year:
 
 # Customize the 404 page
@@ -87,12 +91,12 @@ error_404:
 #   - gravatar: whether to use your Gravatar as the logo
 #   - grayout: whether to enable a hover effect on the logo
 logo:
-  enabled: true
-  width: 50
-  height: 50
-  url: /images/logo.png
+  enabled: false
+  width: 70
+  height: 70
+  url: /images/logo.gif
   gravatar: false
-  grayout: true
+  grayout: false
 
 # Customize the favicons.
 # Cactus supports a limited set of the three most important icons:
@@ -105,13 +109,13 @@ logo:
 #   - gravatar: whether to create a favicon from your Gravatar
 favicon:
   desktop:
-    url: /images/favicon.ico
+    url: /images/logo.gif
     gravatar: false
   android:
-    url: /images/favicon-192x192.png
+    url: /images/logo.gif
     gravatar: false
   apple:
-    url: /images/apple-touch-icon.png
+    url: /images/logo.gif
     gravatar: false
 
 # The color scheme that should be used to highlight codeblocks.
@@ -121,7 +125,7 @@ favicon:
 # Set the color scheme.
 # Available color schemes are 'dark', 'light', 'classic' and 'white'.
 # Alternatively, add your own custom color scheme to source/css/_colors.
-colorscheme: dark
+colorscheme: white
 
 # Maximal width of the page in rem units.
 page_width: 48
@@ -132,7 +136,7 @@ page_width: 48
 ##############################################################################
 
 # Enable or disable the RSS feed.
-rss: false
+rss: atom.xml
 
 # Turn your web pages into graph objects (see http://ogp.me).
 open_graph:
@@ -157,11 +161,11 @@ disqus:
 
 # Fill in your Utterances data to enable Utterances comments
 utterances:
-  enabled: false
-  repo: owner/githubrepo
+  enabled: true
+  repo: A5yncX/A5yncX.github.io
   issue_term: pathname
   label: Comment
-  theme: github-dark
+  theme: preferred-color-scheme
 
 # Fill in your Google Analytics tracking ID to enable Google Analytics.
 google_analytics:
